@@ -1,5 +1,3 @@
-import "./App.css";
-
 const items = 4;
 const columns = 5;
 
@@ -8,8 +6,7 @@ function App() {
     <div style={{ display: "flex" }}>
       <svg
         style={{
-          border: "4px solid",
-          transition: "background 0.3s",
+          border: "4px solid blue",
           borderRadius: "10px",
           cursor: "pointer",
         }}
