@@ -31,10 +31,8 @@ function App() {
                       fill="transparent"
                       stroke="transparent"
                     />
-                    <circle
-                      cx="10"
-                      cy="130"
-                      r="10"
+                    <path
+                      d="M10,120 L12.5,125 L18,125 L14,128 L15.5,133.5 L10,131 L4.5,133.5 L6,128 L2,125 L7.5,125 Z"
                       fill="white"
                       className={`move-${key}`}
                     />
