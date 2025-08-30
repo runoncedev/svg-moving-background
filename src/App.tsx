@@ -6,8 +6,17 @@ const columns = 5;
 function App() {
   return (
     <div style={{ display: "flex" }}>
-      <svg width="240px" height="90px">
-        <rect x="20" y="20" width="200" height="50" fill="#f0f0f0" />
+      <svg
+        style={{
+          border: "4px solid",
+          transition: "background 0.3s",
+          borderRadius: "10px",
+          cursor: "pointer",
+        }}
+        width="200px"
+        height="50px"
+      >
+        <rect x="0" y="0" width="200" height="50" fill="transparent" />
         <g transform="translate(-40)">
           {Array.from({ length: columns }).map((_, column) => (
             <g key={column} transform={`translate(${column * 50})`}>
@@ -29,7 +38,7 @@ function App() {
                       cx="10"
                       cy="130"
                       r="10"
-                      fill="#242424"
+                      fill="white"
                       className={`move-${key}`}
                     />
                     <style>

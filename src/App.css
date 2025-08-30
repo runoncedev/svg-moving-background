@@ -4,3 +4,24 @@
   padding: 2rem;
   text-align: center;
 }
+
+@property --myColor1 {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+@property --myColor2 {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+svg {
+  background: linear-gradient(var(--myColor1), var(--myColor2));
+  transition: --myColor2 3s;
+}
+
+svg:hover {
+  --myColor2: pink;
+}
