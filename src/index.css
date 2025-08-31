@@ -1,3 +1,11 @@
+button {
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: blue;
+}
+
 @property --myColor1 {
   syntax: "<color>";
   initial-value: white;
@@ -11,10 +19,23 @@
 }
 
 svg {
-  background: linear-gradient(to right, var(--myColor1), var(--myColor2));
+  background: linear-gradient(
+    to bottom right,
+    var(--myColor1),
+    var(--myColor2)
+  );
   transition: --myColor2 0.3s ease-out;
 }
 
 svg:hover {
   --myColor2: blue;
+}
+
+button {
+  transition: color 0.1s ease-out, text-shadow 0.1s ease-out;
+}
+
+button:hover {
+  color: white;
+  text-shadow: 1px 1px 0 #000;
 }
